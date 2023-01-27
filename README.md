@@ -56,40 +56,39 @@ Feel free to check out the [Strapi GitHub repository](https://github.com/strapi/
 
 <sub>🤫 Psst! [Strapi is hiring](https://strapi.io/careers).</sub>
 
-Pest Control API
-This API is built using Strapi and Node.js, and it serves as the backend for a pest control system.
+### Pest Control API
+- This API is built using Strapi and Node.js, and it serves as the backend for a pest control system.
 
-Getting Started
-Clone the repository: git clone https://github.com/your-username/pest-control-api.git
-Install the dependencies: npm install
-Start the development server: npm start
-The API will be available at http://localhost:1337/
-Endpoints
-The following endpoints are available:
+### Getting Started
+- Clone the repository: git clone https://github.com/your-username/pest-control-api.git
+- Install the dependencies: npm install
+- Start the development server: npm start
+- The API will be available at http://localhost:1337/
+- Endpoints
+- The following endpoints are available:
 
-GET /pests: Retrieve a list of all pests
-GET /pests/:id: Retrieve a specific pest by ID
-POST /pests: Create a new pest
-PUT /pests/:id: Update a specific pest by ID
-DELETE /pests/:id: Delete a specific pest by ID
-Data Structure
-Each pest object has the following properties:
+### GET /pests: Retrieve a list of all pests
+- GET /pests/:id: Retrieve a specific pest by ID
+- POST /pests: Create a new pest
+- PUT /pests/:id: Update a specific pest by ID
+- DELETE /pests/:id: Delete a specific pest by ID
+- Data Structure
+- Each pest object has the following properties:
 
-id: Unique identifier
-name: Name of the pest
-type: Type of pest (e.g. "insect", "rodent")
-location: Location where the pest was found
-status: Current status of the pest (e.g. "active", "eradicated")
-Examples
-Retrieve a list of all pests:
+- id: Unique identifier
+- name: Name of the pest
+- type: Type of pest (e.g. "insect", "rodent")
+- location: Location where the pest was found
+- status: Current status of the pest (e.g. "active", "eradicated")
+- Examples
+- Retrieve a list of all pests:
 
-bash
-Copy code
+```
 GET http://localhost:1337/pests
-Create a new pest:
+```
 
-bash
-Copy code
+Create a new pest:
+```
 POST http://localhost:1337/pests
 {
     "name": "Carpenter Ant",
@@ -97,13 +96,17 @@ POST http://localhost:1337/pests
     "location": "Kitchen",
     "status": "active"
 }
+```
+
 Update a specific pest:
 
-bash
-Copy code
+```
 PUT http://localhost:1337/pests/1
 {
     "status": "eradicated"
 }
-Contributing
+```
+
+### Contributing
+
 If you find any bugs or have any suggestions, please open an issue or a pull request. Any contributions are welcome!
